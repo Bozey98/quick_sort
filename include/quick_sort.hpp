@@ -9,7 +9,7 @@ template <typename Iterator>
 void quick_sort(Iterator begin, Iterator end)
 {
 	Iterator pivot = end - 1;
-	Iterator x = end - 1;
+	Iterator j = end - 1;
 	Iterator i = begin;
 	while (i <= j)
 	{
