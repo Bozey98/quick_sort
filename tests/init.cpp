@@ -1,4 +1,4 @@
-#include <ins_sort.hpp>
+#include <quick_sort.hpp>
 #include <catch.hpp>
 SCENARIO("sort","[sort]")
 {
@@ -6,7 +6,7 @@ SCENARIO("sort","[sort]")
 	int sorted_matrix[6] =  { 1, 2, 3, 4, 5, 6 };
 	int* first = &matrix[0];
 	int* second = &matrix[6];
-	ins_sorting(first, second);
+	quick_sort(first, second);
 	bool check = NULL;
 	for (int i = 0; i < 6; i++)
 	if (matrix[i] == sorted_matrix[i])
